@@ -1,0 +1,110 @@
+=== Multiple Term Selection Widget ===
+Contributors: xDe6ug
+Donate link: http://wiboo.fr/wordpress
+Tags: widget, plugin, term, custom-post, taxonomy, sidebar, drill, search, criteria, drop-down
+Requires at least: 3.4
+Tested up to: 3.8
+Stable tag: 1.0.2
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Ce widget permet de rechercher des objets personnalisés en fonction des termes d'une taxonomie en utilisant des menus déroulant.
+
+== Description ==
+
+Transforme les taxonomies de vos objets personnalisés en moteur de recherche ! Ce plugin permet d'apporter à votre site des widgets de recherche en menu déroulant basé sur les termes parents (critères) d'une taxonomie et de ses enfants (options).
+
+Par exemple, si vous avez des termes de nom de pays dans un terme parent 'pays', vous pouvez chercher tous les objets(articles) personnalisés correspondant à un ou plusieurs de ces pays. 
+
+Vous pouvez utiliser ce plugin comme un widget ou à l'intérieur d'un contenu grâce à un shortcode.
+
+= Fonctionnalités =
+* Choix du type d'objet
+* Choix de la taxonomie
+* Sélection des termes (parents/critères et enfants/options), possibilité de choisir l'ordre d'apparition
+* Addition automatique, ou non, des nouveaux termes/options créés par les rédacteurs ou administrateurs dans la sélection, avec possibilité de remise en ordre alphabétique
+* Sélection simple ou multiple des termes/options de recherche
+* Recherche sur tous les termes/critères ou sur au moins un des termes/critères
+* Possibilité de laisser à l'utilisateur le choix du type de recherche
+* Classement des résultats par défaut ou par titre
+* Génération complète d'URL 
+* Mets en place une réécriture d'URL si les permalinks sont activés
+* Pagination
+* Une recherche sans sélection peut afficher tous les objets ou ne rien faire
+* Possibilité de ne pas afficher les termes vides (c'est-à-dire sans objets liés)
+* Si on n'affiche pas les termes vides et si la recherche s'effectue sur tous les termes, désactivation des termes ne proposant plus de résultats lorsqu'ajoutés aux termes d'une précédente recherche
+* Résultats affichés en tant qu'archive du type d'objet.
+* Possibilité d'utiliser le plugin jQuery Select2 ou non
+* Possibilité d'utiliser un shortcode
+
+= Initiateur =
+Ce plugin est une initiative de l'**Agence Wiboo**. Pour plus d'info [visitez notre site](http://wiboo.fr/wordpress "Wiboo").
+
+Merci au plugin Multiple Category Selection Widget de Zackdesign (plugin de zackdesign http://wp.zackdesign.biz/category-selection-widget/) qui a donné l'idée de base.
+
+== Installation ==
+
+1. Télécharger le dossier 'multiple-term-selection-widget' et placer le dans le répertoire '/wp-content/plugins/'
+2. Activer le plugin à travers le menu extension de Wordpress
+3. Si nécessaire, créer des termes parents et enfants dans une taxonomie hierarchisée
+4. Ajouter des widgets MTSW ou utiliser le shortcode dans un contenu
+
+== Changelog ==
+
+= 1.0.2 =
+* Improved code
+* Documentation added
+* Undefined index when there's not at least one parent term and one child term in the taxonomy: Bug fixed
+
+= 1.0.1 =
+* Bug fixed
+* Improved code
+
+= 1.0 =
+* Ok go on
+
+= 0.9 =
+* Meilleure ergonomie en back office
+* Ajout de la possibilité de modifier manuellement l'ordre des termes
+* Ajout de la sélection multiple
+* Ajout du tri alphabétique
+* Ajout du plugin jQuery Select2
+* Ajout de la gestion de la désactivation des termes n'apportant plus de résultats si ajoutés au résultat de la recherche actuelle
+
+= 0.5 =
+* Première version
+
+== Documentation ==
+
+= Description =
+Multiple Term Selection Widget permet d'ajouter un (ou plusieurs) widget(s) de recherche sur votre site. La recherche s'effectue sur les articles (ou autres types d'objets personnalisés – custom posts) en fonction des termes appartenant à une taxonomie liée aux articles (ou au type d'objet personnalisé). Les résultats s'affiche sur la page des archives des articles (ou dans celle du type d'objet personnalisé). La taxonomie doit obligatoirement être hiérarchique.
+
+= Principe =
+Dans une taxonomie hiérarchique (catégorie ou taxonomie personnalisée – mais pas les tags) liée aux articles (ou à un type d'objet personnalisé), il faut créer un ou des termes parents dont le ou les noms correspondent à un ou des thèmes de recherche (ex : ville, pays, couleur, prix, etc …). Ensuite, il faut créer comme enfants de ces termes les différentes possibilités.
+
+À la mise en place d'un widget, on choisit le type d'objet, la taxonomie, les termes parents et enfants qui seront utilisés. Le plugin s'occupe du reste. Lorsqu'un utilisateur sélectionne un ou plusieurs termes et éxécute une recherche, les objets liés aux termes en questions sont affichés.
+
+= Configuration =
+Dans le menu Réglages > Multiple Term Selection Widget, vous pouvez gérer la configuration générale du plugin et en particulier celle du widget lié au shortcode.
+Dans le menu des Widgets, ajoutez un widget Multi-Term-Selection et configurez-le.
+
+= Configuration d'un widget =
+* Id : identifiant du widget (automatique – non modifiable)
+* Titre : titre du widget
+* Type d'objet : choisir le type d'objet sur lequel effectuer la recherche (seuls les types possédant une taxonomie hiérarchique sont proposés)
+* Taxonomie : choisir la taxonomie utilisée pour afficher les options de recherche (seules les taxonomies hiérarchiques lié au type d'objet sélectionné sont proposées)
+* Termes inclus : cocher les termes parents (thèmes de la recherche), puis sélectionner ou désélectionner les termes enfants (options de la recherche). Les termes parents peuvent être réordonnés en les faisant glisser, de même que les termes enfants. Si on décoche, puis recoche un terme parent, les termes enfants sont tous resélectionés et réordonnés automatiquement par ordre alphabétique
+* Ajout automatique dans la sélection des nouveaux termes : si après avoir créé un widget, de nouveaux termes enfants de la taxonomie utilisée sont ajoutés par un responsable du site, ceux-ci peuvent être automatiquement intégrés dans la sélection des termes enfants (oui), avec remise des termes dans l'ordre alphabétique (oui avec remise en ordre alphabétique), ou ne pas être intégrés (non)
+* Sélection multiple : possibilité de sélectionner plusieurs options (termes enfants) simultanément pour un même thème (terme parent). La recherche s'effectue alors par rapport à ces options de façon à ce qu'au moins l'une d'entre elle soit liée aux objets affichés
+* Type de recherche : possibilité de laisser la possibilité à l'utilisateur le choix du type de recherche
+* Type de recherche par défaut : la recherche peut s'effectuer de telle manière qu'au moins une des options sélectionnées dans chaque thème soit liée aux objets affichés (au moins un), ou qu'au moins une des options sélectionnées pour chaque thème soient liées aux objets affichés (tous)
+* Résultats d'une recherche sans sélection : si aucune option n'est sélectionnée et que la recherche est lancée, tous les objets peuvent être affichés (tous) ou la page actuelle est relancée sans rien changer (aucun)
+* Ordre d'affichage : l'affichage des objets peut se faire dans l'ordre par défaut (par défaut) ou être classé par titre (par titre)
+* Cacher les termes vides : on peut cacher les termes enfants (options) qui ne sont liées à aucun objet. Si on choisit oui à cette configuration et qu'on effectue un recherche portant obligatoirement sur tous les thèmes (termes parents), alors les options qui n'apporteraient aucun résultat (pas d'objet lié répondant aux options déjà sélectionnées + l'option présente) sont désactivées (grisées)
+* Texte du bouton de validation : texte du bouton de validation
+
+= Permalien =
+*Le permalien par défaut se présente sous la forme :*
+`http://[home]/?post_type=[nom du type d'objet]&taxonomy=[nom de la taxonomie]&terms=[id des termes enfants(options séparées par des virgules) des thèmes (séparés par des points virgules)]&search_type=[type de recherche]&order=[ordre d'affichage des résultats]&paged=[pagination]`
+*Si une autre structure a été choisie, le permalien se présente de cette façon :*
+`http://[home]/[post_type]/[taxonomy]/[terms]/[id des termes enfants (options séparées par des virgules) des thèmes (séparés par des points virgules)]/search_type/[type de recherche]/order/[ordre d'affichage des résultats]/paged/[pagination]`

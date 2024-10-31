@@ -1,0 +1,257 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mtsw\n"
+"POT-Creation-Date: 2014-01-16 19:02+0100\n"
+"PO-Revision-Date: 2014-02-02 14:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ../classes/mtsw.php:495
+msgid "Multiple Term Selection Widget"
+msgstr ""
+
+#: ../classes/mtsw.php:510
+msgid "Global Settings"
+msgstr "Réglages généraux"
+
+#: ../classes/mtsw.php:513
+msgid "Default Shortcode Settings"
+msgstr "Réglages du Shortcode par défaut"
+
+#: ../classes/mtsw.php:540
+msgid ""
+"Use the shortcode [mtsw] to generate this default form on any page you wish."
+msgstr ""
+"Utilisez le shortcode [mtsw] pour générer un formulaire sur toutes les pages "
+"que vous souhaitez."
+
+#: ../classes/mtsw.php:580 views/admin_widget.php:54
+#: ../views/admin_settings_default_widget.php:69
+#: ../views/admin_settings_default_widget.php:75
+msgid "Included Terms"
+msgstr "Termes inclus"
+
+#: ../classes/mtsw.php:594 views/admin_widget.php:69
+#: ../views/admin_settings_default_widget.php:90
+#, php-format
+msgid "Included Children Terms of %s"
+msgstr "Termes enfants inclus de %s"
+
+#: ../classes/mtsw_widget.php:12
+msgid "Multi-Term-Selection"
+msgstr ""
+
+#: ../classes/mtsw_widget.php:42 views/admin_form.php:25
+msgid ""
+"No Post Types can be used. You need at least one hierarchical taxonomy (with "
+"at least one parent and one child terms) related to one post type to use "
+"Multiple Term Selection Widget !"
+msgstr ""
+"Aucun type d'objet ne peut être utilisé. Il faut au moins une taxonomie "
+"hiérarchisée (avec au moins un terme parent et un terme enfant) sur un type "
+"d'objet pour pouvoir utiliser Multiple Term Selection Widget !"
+
+#: ../classes/mtsw_widget_options.php:96
+msgid "Search"
+msgstr "Rechercher"
+
+#: ../views/widget_form_content.php:13
+msgid "You can select multiple options"
+msgstr "Vous pouvez sélectionner plusieurs options"
+
+#: ../views/widget_form_content.php:18
+msgid "Select some options"
+msgstr "Sélectionnez des options"
+
+#: ../views/widget_form_content.php:18
+msgid "Select an option"
+msgstr "Sélectionnez une option"
+
+#: ../views/widget_form_content.php:23
+msgid "- No option -"
+msgstr "- Sans option -"
+
+#: ../views/widget_form_content.php:23
+msgid "&raquo; Select an option"
+msgstr "&raquo; Sélectionnez une option"
+
+#: ../views/widget_form_content.php:38
+msgid "Search Type:"
+msgstr "Type de recherche :"
+
+#: ../views/widget_form_content.php:41 views/admin_widget.php:139
+#: ../views/admin_settings_default_widget.php:186
+msgid "Any"
+msgstr "Au moins un"
+
+#: ../views/widget_form_content.php:45 views/admin_widget.php:134
+#: ../views/admin_widget.php:155 views/admin_settings_default_widget.php:191
+#: ../views/admin_settings_default_widget.php:214
+msgid "All"
+msgstr "Tous"
+
+#: ../views/admin_widget.php:4
+msgid "Id:"
+msgstr "Id :"
+
+#: ../views/admin_widget.php:11
+msgid "Title:"
+msgstr "Titre :"
+
+#: ../views/admin_widget.php:18
+msgid "Post Type:"
+msgstr "Type d'objet :"
+
+#: ../views/admin_widget.php:32
+msgid "Taxonomy:"
+msgstr "Taxonomie :"
+
+#: ../views/admin_widget.php:47
+msgid "Included Terms:"
+msgstr "Termes inclus :"
+
+#: ../views/admin_widget.php:93
+msgid "Automatically add new children terms:"
+msgstr "Ajout automatique dans la sélection des nouveaux termes :"
+
+#: ../views/admin_widget.php:109 views/admin_settings_default_widget.php:134
+msgid "Yes with alphabetical reordering"
+msgstr "Oui avec remise en ordre alphabétique"
+
+#: ../views/admin_widget.php:115 views/admin_settings_default_widget.php:143
+#: ../views/admin_settings_default_widget.php:148
+msgid "Multi-selection"
+msgstr "Sélection multiple"
+
+#: ../views/admin_widget.php:122
+msgid "User Chooses Search Type"
+msgstr "L'utilisateur choisit le type de recherche"
+
+#: ../views/admin_widget.php:128
+msgid "Default Search Type:"
+msgstr "Type de recherche par défaut :"
+
+#: ../views/admin_widget.php:144
+msgid "Blank Search Results:"
+msgstr "Résultats d'une recherche sans sélection :"
+
+#: ../views/admin_widget.php:150 views/admin_settings_default_widget.php:209
+msgid "None"
+msgstr "Aucun"
+
+#: ../views/admin_widget.php:160
+msgid "Ordering:"
+msgstr "Ordre d'affichage :"
+
+#: ../views/admin_widget.php:166 views/admin_settings_default_widget.php:232
+msgid "By default"
+msgstr "Par défaut"
+
+#: ../views/admin_widget.php:171 views/admin_settings_default_widget.php:237
+msgid "By title"
+msgstr "Par titre"
+
+#: ../views/admin_widget.php:176
+msgid "Hide empty terms:"
+msgstr "Cacher les termes vides :"
+
+#: ../views/admin_widget.php:192
+msgid "Submit Button Text:"
+msgstr "Texte du bouton de validation :"
+
+#: ../views/admin_settings_default_widget.php:8
+msgid "Id"
+msgstr ""
+
+#: ../views/admin_settings_default_widget.php:20
+msgid "Title"
+msgstr "Titre"
+
+#: ../views/admin_settings_default_widget.php:31
+msgid "Post Type"
+msgstr "Type d'Objet"
+
+#: ../views/admin_settings_default_widget.php:50
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+#: ../views/admin_settings_default_widget.php:115
+#: ../views/admin_settings_default_widget.php:120
+msgid "Automatically add new children terms"
+msgstr "Ajout automatique dans la sélection des nouveaux termes"
+
+#: ../views/admin_widget.php:104 views/admin_widget.php:187
+#: ../views/admin_settings_default_widget.php:129
+#: ../views/admin_settings_default_widget.php:152
+#: ../views/admin_settings_default_widget.php:260
+#: ../views/admin_global_settings.php:16 views/admin_global_settings.php:37
+msgid "Yes"
+msgstr "Oui"
+
+#: ../views/admin_settings_default_widget.php:160
+msgid "Search Type"
+msgstr "Type de recherche"
+
+#: ../views/admin_settings_default_widget.php:165
+msgid "User chooses search type"
+msgstr "L'utilisateur choisit le type de recherche"
+
+#: ../views/admin_settings_default_widget.php:169
+msgid "User Choice"
+msgstr "Choix de l'utilisateur"
+
+#: ../views/admin_settings_default_widget.php:177
+#: ../views/admin_settings_default_widget.php:182
+msgid "Default Search Type"
+msgstr "Type de recherche par défaut "
+
+#: ../views/admin_settings_default_widget.php:200
+#: ../views/admin_settings_default_widget.php:205
+msgid "Blank Search Results"
+msgstr "Résultats d'une recherche sans sélection"
+
+#: ../views/admin_settings_default_widget.php:223
+#: ../views/admin_settings_default_widget.php:228
+msgid "Ordering"
+msgstr "Ordre d'affichage"
+
+#: ../views/admin_settings_default_widget.php:246
+#: ../views/admin_settings_default_widget.php:251
+msgid "Hide empty terms"
+msgstr "Cacher les termes vides"
+
+#: ../views/admin_settings_default_widget.php:270
+msgid "Submit Button Text"
+msgstr "Texte du bouton de validation"
+
+#: ../views/admin_global_settings.php:7 views/admin_global_settings.php:12
+msgid "Use jQuery plugin Select2"
+msgstr "Utiliser le plugin jQuery Select2"
+
+#: ../views/admin_widget.php:99 views/admin_widget.php:182
+#: ../views/admin_settings_default_widget.php:124
+#: ../views/admin_settings_default_widget.php:255
+#: ../views/admin_global_settings.php:20 views/admin_global_settings.php:41
+msgid "No"
+msgstr "Non"
+
+#: ../views/admin_global_settings.php:28 views/admin_global_settings.php:33
+msgid "Use MTSW customize css for plugin Select2"
+msgstr "Utiliser les styles MTSW pour le plugin Select2"
+
+#: ../views/admin_form.php:5
+msgid "Multiple Term Selection Widget Settings"
+msgstr "Réglages de Multiple Term Selection Widget"
+
+#: ../views/admin_form.php:13 views/admin_form.php:20
+msgid "Save Changes"
+msgstr "Sauvegarder"
